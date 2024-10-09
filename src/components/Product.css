@@ -1,0 +1,189 @@
+.mainProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+    
+}
+.mainProduct > img {
+    height: 350px;
+    width: 360px;
+    border: 2px solid #f8f6f6;
+    border-radius: 15px;  
+    
+}
+.pageView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.pageView >:nth-child(2) {
+    height: 450px;
+}
+
+.companyName {
+    color: darkgray;
+}
+
+.productDetails > p {
+    color: darkgray;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.price > :nth-child(2) {
+    font-size: 10px ;
+    width: 30px;          
+    height: 16px;        
+    background-color: black; 
+    border: 2px solid #000;
+    color: #f0f0f0;   
+    display: flex;     
+    flex-direction: column;    
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 05px;  
+    position: static; 
+    margin-top: 4%; 
+    margin-left: -3%; 
+}
+
+.price > :first-child {
+    font-size: 28px;
+    margin-top: -04%;
+}
+
+.preprice {
+    font-size: 14px;
+    color:gray;
+    position: static;
+    margin-top: -40px;
+    text-decoration: line-through;
+}
+
+.quantityControl {
+    display: flex;
+}
+
+.quantityControl > :first-child {
+    display: flex;
+    align-items: center;
+    border: transparent;
+    cursor: pointer;
+}
+
+.quantityControl > :nth-child(3){
+    display: flex;
+    align-items: center;
+    border: transparent;
+    cursor: pointer;
+}
+
+.addcart > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(250, 188, 129);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    position: static;
+    margin-top: -34px ;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.thumbnails {
+    display: flex;
+    margin-top: 10px;
+}
+  
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+  
+.thumbnail.active {
+    border: 2px solid orange;
+}
+
+.viewer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.viewer-content {
+    margin-bottom:0%;
+    margin-left: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viewer-image {
+    width: 45%; 
+    border-radius: 10px;
+}
+  
+
+.close {
+    color: rgb(252, 153, 61);
+    font-size: 32px;
+    cursor: pointer;
+} 
+
+.navigation {
+    display: flex;
+    position: absolute;
+    gap: 355px;
+    right: 448px;
+    top: 300px;
+
+    
+}
+  
+.prev, .next {
+    cursor: pointer;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 50%;
+    
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.thumbnails1 {
+    position: static;
+    display: flex;
+    margin-top: 0%;
+    margin-right: 53% ;
+    
+    
+}

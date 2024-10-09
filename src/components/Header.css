@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar {
+    background-color: none;
+    gap: 20px;
+    padding: 10px;
+    text-decoration: none; 
+    display: flex;
+    align-items: center; 
+    justify-content: "space-between";
+    flex-direction: row;
+}
+
+.navbar > li {
+    list-style: none;
+    font-family: Roboto; 
+    font-size: 1rem;
+}
+
+.navbar > li > a {
+    text-decoration: none;
+    color: darkgray;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar > li > a:hover {  
+    color: black;
+    border-bottom: 2px solid black;
+    margin-bottom: -2px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icon > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon > button:first-child {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon > button:nth-child(2) > img {
+    height: 28px;
+}
+
+.logonav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart {
+    position: absolute;
+    top: 60px; 
+    left: 900px;
+    height: 160px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.cart h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.cartItem {
+    padding: 15px 1 ;
+}
+
+.cartItem > :nth-child(2) {
+    font-size: 16px;
+    right: 50px;
+}
+
+.cartImage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 15px;
+    position: absolute;
+    left: 10px;
+}  
+
+.checkout-btn {
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(224, 94, 8);
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.delete-item {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 90px;
+    right: 35px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .viewer-content {
+      max-width: 95%;
+      max-height: 95%;
+    }
+  
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+    }
+  }
+  
